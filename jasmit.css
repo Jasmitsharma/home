@@ -448,6 +448,10 @@ label:before {
 		height: 300px;
 	}
 
+	.bottom-left{
+		visibility: hidden;
+	}
+
 	.contact{
 		display: block;
 		padding-left: 1rem;
