@@ -1,0 +1,464 @@
+
+@import url('https://fonts.cdnfonts.com/css/maven-pro');
+@import url('https://fonts.cdnfonts.com/css/teko');
+
+
+html{
+    scroll-behavior: smooth;
+      overflow-x: hidden;
+  position: relative;
+
+}
+
+body{
+	background: var(--primary-color);
+	margin: 0;
+  padding: 0;
+    overflow-x: hidden;
+  position: relative;
+}
+
+
+
+:root{
+    --primary-color: #333333;
+    --secondary-color: white;
+    --third-color: #181818;
+
+    }
+
+.theme{
+     --primary-color: white;
+    --secondary-color: black;
+    --third-color: whitesmoke;
+}
+
+nav {
+	position: fixed;
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	height: 100px;
+	top: 0;
+	left: 0;
+	align-items: center;
+	font-family: 'Teko', sans-serif;
+	letter-spacing: 1px; 
+	transition: 1s;
+	font-size: 1.5rem;
+}
+
+.navbar{
+	display: flex;
+	align-items: center;
+}
+
+.navlink{
+	display: flex;
+}
+
+.darkmodebutton{
+	padding-left: 2rem;
+	margin-top: -2.5px;
+}
+
+nav p{
+	color: var(--secondary-color);
+	padding-right: 15rem;
+	text-decoration: none;
+}
+
+.navbar a {
+	text-decoration: none;
+	cursor: pointer;
+	color: var(--secondary-color);
+}
+
+.navbar p a:hover{
+	border: none;
+}
+
+nav ul{
+	padding-left: 15rem;
+}
+
+nav.black{
+	background: var(--third-color);
+   	height: 100px;
+   	z-index: 200;
+}
+
+.navbar a.active,
+.navbar a:hover{
+    border: solid;
+    padding-left:.5rem ;
+    padding-right:.5rem ;
+    padding-top: .2rem;
+}
+
+li{
+	list-style: none;
+	display: inline-block;
+	padding-left: 2rem;
+}
+
+li a{
+	text-decoration: none;
+	color: var(--secondary-color);
+	text-transform: uppercase;	
+}
+
+nav .fa-sharp{
+    display: none;
+}
+
+.details{
+	padding-top: 100px;
+	height: 90vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: var(--secondary-color);
+	font-family: 'Maven Pro', sans-serif;
+	font-weight: 500;
+}
+
+.details p{
+	font-size: 1.3rem;
+}
+
+.details i{
+	font-size: 1.8rem;
+	cursor: pointer;
+	text-decoration: none;
+	color: var(--secondary-color);
+}
+
+.fa-linkedin:hover{
+	transition: all .5s ease;
+	transform: scale(1.5);
+	color: #0A66C2;
+}
+
+.fa-github:hover{
+	transition: all .5s ease;
+	transform: scale(1.5);
+}
+
+.fa-instagram:hover{
+	transition: all .5s ease;
+	transform: scale(1.5);
+	background: #d6249f;
+  	background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+}
+
+.aboutme{
+	color: var(--secondary-color);
+	font-family: 'Maven Pro', sans-serif;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	height: 60vh;
+}
+
+.aboutme P{
+	font-size: 1rem;
+	width: 400px;
+	text-align: left;
+	padding-right: 5rem;
+}
+
+.aboutme i {
+	font-size: 2.5rem;
+	cursor: pointer;
+}
+
+.fa-css3-alt{
+  	color:  #1680C0;
+}
+
+
+.fa-html5{
+ color: #f06529
+}
+
+.fa-js{
+ color: #f0db4f;
+}
+
+.fa-react{
+ color: #61DBFB
+}
+
+
+.aboutme img{
+	width: 400px;
+	height: 300px;
+	border-radius: 1rem;
+}
+
+.linesection{
+	color: var(--secondary-color);
+	font-family: 'Maven Pro', sans-serif;
+	position: absolute;
+  	left: 50%;
+}
+
+.line{
+	border-left: 1.5px solid var(--secondary-color);
+  	height: 100px;
+  	margin-left: 4px;
+}
+
+.portfolio{
+	color: var(--secondary-color);
+	font-family: 'Maven Pro', sans-serif;
+	display: grid;
+	text-align: center;
+	justify-content: center;
+	padding-top: 150px;
+
+}
+
+.portfolio img{
+	height: 400px;
+	width: 1200px;
+	padding-bottom: 3rem;
+	opacity: .5;
+}
+
+.bottom-left{
+	position: absolute;
+  	bottom: 100px;
+  	left: 50px;
+  	color: white;
+  	background-color: black;
+  	font-family: 'Teko', sans-serif; 
+  	letter-spacing: 1px;                    
+  	text-transform: uppercase;
+  	border: solid black;
+  	padding: 4px;
+  	padding-right: 10px;
+  	padding-left: 10px;
+}
+
+.bottom-left:hover{
+	background-color: white;
+	color: black;
+	border: solid white;
+	transition: .5s;
+}
+
+.contact{
+	color: var(--secondary-color);
+	font-family: 'Teko', sans-serif;
+	display: grid;
+	text-align: left;
+	justify-content: center;
+	text-transform: uppercase;
+	font-weight: 500;
+	font-size: 2rem;
+	padding-bottom: 5rem;
+	padding-top: 10rem;
+}
+
+.contact p{
+	text-transform: none;
+	font-size: 1rem;
+	font-family: 'Maven Pro', sans-serif;
+}
+
+.contactinfo{
+	display: flex;
+	text-align: left;
+	font-size: 1.3rem;
+} 
+
+.contactinfo p {
+	padding-right: 5rem;
+}
+
+.footer{
+	background-color: var(--third-color);
+	color: var(--secondary-color);
+	display: grid;
+	align-items: center;
+	text-align: center;
+	font-family: 'Teko', sans-serif;
+	letter-spacing: 1px;
+	font-size: 1.5rem;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 150px;
+}
+
+.footer p{
+	font-size: 0.8rem;
+}
+
+.footer i{
+	font-size: 1.5rem;
+	cursor: pointer;
+	color: var(--secondary-color);
+	text-decoration: none;
+}
+
+
+/*.....DarakMode.....*/
+
+
+
+input[type="checkbox"] {
+	visibility: hidden;
+	&:checked + label {
+		transform: rotate(360deg);
+		background-color: var(--secondary-color);
+		&:before {
+			transform: translateX( 20px);
+			background-color: var(--primary-color);
+		}
+	}
+}
+
+label {
+	display: flex;
+	width: 40px;
+	height: 16px;
+	border-radius: 99em;
+	position: relative;
+	transition: transform .75s ease-in-out;
+	transform-origin: 50% 50%;
+	cursor: pointer;
+	background-color: var(--secondary-color);
+}
+
+label:before {
+	transition: transform .75s ease;
+	transition-delay: .5s;
+	content: "";
+	display: block;
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	background-color: var(--primary-color);
+	border-radius: 50%;
+	top: 3px;
+	left: 4px;
+}
+
+
+.underconstruction{
+	padding-top: 100px;
+	height: 90vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: var(--secondary-color);
+	font-family: 'Maven Pro', sans-serif;
+	font-weight: 500;
+	font-size: 1.5rem;
+}
+
+
+@media (max-width: 820px){
+
+
+
+	.navlink{
+		position: absolute;
+		background: var(--third-color);;
+		height: 100vh;
+		width: 100%;
+		top: 0;
+		right: -100%;
+		transition: 1s;
+		display: block;
+	}
+
+	.navlink ul{
+		padding: 0;
+		display: grid;
+		padding-top: 3rem;
+	}
+
+	.navlink ul li{
+		padding-bottom: 2rem;
+		text-align: center;
+	}
+
+	.darkmodebutton{
+		display: grid;
+		justify-content: center;
+	}
+
+	nav .fa-sharp{
+		display: block;
+		color: var(--secondary-color);
+		font-size: 22px;
+		cursor: pointer;
+	}
+
+	#menuclose{
+		margin: 2rem;
+	}
+
+	#menublack{
+		color: black;
+	}
+
+	#menuwhite{
+		margin-right: 4rem;
+	}
+
+	.navbar p{
+		margin-left: 4rem;
+	}
+
+	.details{
+		padding-left: 1rem;
+	}
+
+	.aboutme{
+		display: block;
+		padding: 0;
+		padding-bottom: 10rem;
+		width: 100%;	
+	}
+
+	.aboutme p {
+		padding-left: 1rem;
+		width: 90%;
+	}
+
+	.aboutme img{
+		width: 100%;
+	}
+
+	.linesection{
+		visibility: hidden;
+	}
+
+	.portfolio img{
+		width: 100%;
+		height: 300px;
+	}
+
+	.contact{
+		display: block;
+		padding-left: 1rem;
+	}
+
+	.contactinfo{
+		display: block;
+	}
+
+	.contactinfo p{
+		padding-bottom: 1.5rem;
+	}
+
+}
