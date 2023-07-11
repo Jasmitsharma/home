@@ -449,7 +449,7 @@ label:before {
 	}
 
 	.bottom-left{
-		visibility: hidden;
+		display: none;
 	}
 
 	.contact{
